@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Auth & session state (CRITICAL — never commit these)
+auth/
+*.json.bak
+
+# Environment files (CRITICAL — never commit real credentials)
+.env
+.env.local
+config/environments/test.env
+config/environments/stage.env
+config/environments/prod.env
+config/environments/perf.env
+config/environments/dev.env
+
+# Keep the example env file tracked
+!config/environments/example.env
+
+# TypeScript build output
+dist/
+*.tsbuildinfo
+
+# Playwright output
+reports/
+test-results/
+playwright-report/
+reports/allure-results/
+reports/allure-report/
+reports/test-artifacts/
+
+# Temp test data generated at runtime
+test-data/schemas/temp_*
+test-data/documents/temp_*
+
+# Allure
+allure-results/
+allure-report/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# CI cache
+.cache/

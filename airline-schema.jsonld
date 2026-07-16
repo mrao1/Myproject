@@ -1,0 +1,253 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Airline",
+  "@id": "https://example.com/airlines/example-airlines",
+  "name": "Example Airlines",
+  "alternateName": "EXA",
+  "iataCode": "EX",
+  "icaoCode": "EXA",
+  "description": "A full-service international airline providing passenger and cargo services worldwide",
+  "url": "https://www.example-airlines.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://www.example-airlines.com/logo.png",
+    "width": 200,
+    "height": 200
+  },
+  "image": "https://www.example-airlines.com/airline-image.jpg",
+  "telephone": "+1-800-123-4567",
+  "email": "contact@example-airlines.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Aviation Boulevard",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "postalCode": "10001",
+    "addressCountry": "US"
+  },
+  "foundingDate": "1990-01-15",
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Example Aviation Group",
+    "url": "https://www.example-aviation-group.com"
+  },
+  "subOrganization": [
+    {
+      "@type": "Organization",
+      "name": "Example Cargo",
+      "description": "Cargo division of Example Airlines"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/exampleairlines",
+    "https://twitter.com/exampleairlines",
+    "https://www.linkedin.com/company/example-airlines",
+    "https://www.instagram.com/exampleairlines"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "Customer Service",
+      "telephone": "+1-800-123-4567",
+      "email": "customerservice@example-airlines.com",
+      "availableLanguage": ["English", "Spanish", "French"],
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Reservations",
+      "telephone": "+1-800-123-4568",
+      "email": "reservations@example-airlines.com"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "Baggage Services",
+      "telephone": "+1-800-123-4569",
+      "email": "baggage@example-airlines.com"
+    }
+  ],
+  "award": [
+    "Best Airline 2023 - Aviation Awards",
+    "Customer Service Excellence 2024"
+  ],
+  "memberOf": [
+    {
+      "@type": "Organization",
+      "name": "International Air Transport Association",
+      "alternateName": "IATA"
+    },
+    {
+      "@type": "Organization",
+      "name": "Star Alliance"
+    }
+  ],
+  "owns": [
+    {
+      "@type": "Vehicle",
+      "@id": "https://example.com/airlines/fleet/boeing-787",
+      "name": "Boeing 787 Dreamliner",
+      "vehicleIdentificationNumber": "N12345",
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Boeing"
+      },
+      "model": "787-9",
+      "seatingCapacity": 296
+    }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Economy Class Flight Service",
+        "description": "Standard air travel service with complimentary refreshments"
+      },
+      "price": "299.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Business Class Flight Service",
+        "description": "Premium air travel with lie-flat seats, gourmet meals, and priority boarding"
+      },
+      "price": "1299.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "First Class Flight Service",
+        "description": "Luxury air travel with private suites, chef-prepared meals, and exclusive lounge access"
+      },
+      "price": "2999.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  ],
+  "serviceArea": {
+    "@type": "GeoShape",
+    "description": "Operates flights to over 150 destinations across 6 continents"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Japan"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Flight Services and Add-ons",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Extra Baggage Allowance",
+          "description": "Additional checked baggage allowance"
+        },
+        "price": "50.00",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Seat Selection",
+          "description": "Choose your preferred seat in advance"
+        },
+        "price": "25.00",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Priority Boarding",
+          "description": "Board the aircraft before general boarding"
+        },
+        "price": "35.00",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Lounge Access",
+          "description": "Access to premium airport lounges"
+        },
+        "price": "75.00",
+        "priceCurrency": "USD"
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "bestRating": "5",
+    "worstRating": "1",
+    "ratingCount": "12450",
+    "reviewCount": "8900"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "John Doe"
+      },
+      "datePublished": "2024-01-15",
+      "reviewBody": "Excellent service and comfortable flights. The cabin crew was very attentive and professional.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5",
+        "bestRating": "5"
+      }
+    }
+  ],
+  "slogan": "Connecting the World with Excellence",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 25000
+  },
+  "knowsAbout": [
+    "Aviation",
+    "Air Travel",
+    "Customer Service",
+    "Flight Operations",
+    "Safety Standards"
+  ],
+  "diversityPolicy": "https://www.example-airlines.com/diversity",
+  "ethicsPolicy": "https://www.example-airlines.com/ethics",
+  "iso6523Code": "1234567890"
+}

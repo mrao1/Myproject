@@ -1,0 +1,140 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Flight",
+  "@id": "https://example.com/flights/EX123-2024-01-15",
+  "flightNumber": "EX123",
+  "airline": {
+    "@type": "Airline",
+    "@id": "https://example.com/airlines/example-airlines",
+    "name": "Example Airlines",
+    "iataCode": "EX"
+  },
+  "departureAirport": {
+    "@type": "Airport",
+    "name": "John F. Kennedy International Airport",
+    "iataCode": "JFK",
+    "icaoCode": "KJFK",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "40.6413",
+      "longitude": "-73.7781"
+    }
+  },
+  "departureTime": "2024-01-15T10:00:00-05:00",
+  "departureGate": "B23",
+  "departureTerminal": "4",
+  "arrivalAirport": {
+    "@type": "Airport",
+    "name": "Heathrow Airport",
+    "iataCode": "LHR",
+    "icaoCode": "EGLL",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "London",
+      "addressCountry": "GB"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "51.4700",
+      "longitude": "-0.4543"
+    }
+  },
+  "arrivalTime": "2024-01-15T22:30:00+00:00",
+  "arrivalGate": "A15",
+  "arrivalTerminal": "5",
+  "aircraft": {
+    "@type": "Vehicle",
+    "name": "Boeing 787-9 Dreamliner",
+    "model": "787-9",
+    "vehicleIdentificationNumber": "N12345"
+  },
+  "flightDistance": {
+    "@type": "Distance",
+    "value": "3451",
+    "unitCode": "SMI"
+  },
+  "estimatedFlightDuration": "PT7H30M",
+  "provider": {
+    "@type": "Airline",
+    "@id": "https://example.com/airlines/example-airlines",
+    "name": "Example Airlines"
+  },
+  "seller": {
+    "@type": "Airline",
+    "name": "Example Airlines",
+    "url": "https://www.example-airlines.com"
+  },
+  "webCheckinTime": "2024-01-14T10:00:00-05:00",
+  "boardingTime": "2024-01-15T09:30:00-05:00",
+  "offers": [
+    {
+      "@type": "Offer",
+      "price": "299.00",
+      "priceCurrency": "USD",
+      "category": "Economy",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2023-12-01T00:00:00Z",
+      "url": "https://www.example-airlines.com/book/EX123",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "299.00",
+        "priceCurrency": "USD",
+        "valueAddedTaxIncluded": true
+      }
+    },
+    {
+      "@type": "Offer",
+      "price": "1299.00",
+      "priceCurrency": "USD",
+      "category": "Business",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2023-12-01T00:00:00Z"
+    },
+    {
+      "@type": "Offer",
+      "price": "2999.00",
+      "priceCurrency": "USD",
+      "category": "First",
+      "availability": "https://schema.org/LimitedAvailability",
+      "validFrom": "2023-12-01T00:00:00Z"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Aircraft Type",
+      "value": "Wide-body jet"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Meal Service",
+      "value": "Complimentary meals and beverages"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Entertainment",
+      "value": "Personal in-flight entertainment system"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "WiFi",
+      "value": "Available for purchase"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Baggage Allowance Economy",
+      "value": "2 x 23kg checked bags, 1 x 7kg carry-on"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Baggage Allowance Business",
+      "value": "3 x 32kg checked bags, 2 x 10kg carry-on"
+    }
+  ]
+}
