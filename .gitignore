@@ -1,56 +1,44 @@
-# Dependencies
-node_modules/
-.npm/
-
-# Auth & session state (CRITICAL — never commit these)
-auth/
-*.json.bak
-
-# Environment files (CRITICAL — never commit real credentials)
-.env
-.env.local
-config/environments/test.env
-config/environments/stage.env
-config/environments/prod.env
-config/environments/perf.env
-config/environments/dev.env
-
-# Keep the example env file tracked
-!config/environments/example.env
-
-# TypeScript build output
-dist/
-*.tsbuildinfo
-
-# Playwright output
-reports/
-test-results/
-playwright-report/
-reports/allure-results/
-reports/allure-report/
-reports/test-artifacts/
-
-# Temp test data generated at runtime
-test-data/schemas/temp_*
-test-data/documents/temp_*
-
-# Allure
-allure-results/
-allure-report/
-
-# Logs
-logs/
-*.log
-
-# OS
+*#
+*.iml
+*.ipr
+*.iws
+*.jar
+*.sw?
+*~
+.#*
+.*.md.html
 .DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# CI cache
-.cache/
+.attach_pid*
+.classpath
+.factorypath
+.gradle
+.metadata
+.project
+.recommenders
+.settings
+.springBeans
+.vscode
+/code
+MANIFEST.MF
+_site/
+activemq-data
+bin
+build
+!/**/src/**/bin
+!/**/src/**/build
+build.log
+dependency-reduced-pom.xml
+dump.rdb
+interpolated*.xml
+lib/
+manifest.yml
+out
+overridedb.*
+target
+.flattened-pom.xml
+secrets.yml
+.gradletasknamecache
+.sts4-cache
+.git-hooks/
+node_modules
+/.kotlin/
