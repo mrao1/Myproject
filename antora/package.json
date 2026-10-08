@@ -5,7 +5,7 @@
   "dependencies": {
     "@antora/cli": "3.2.0-rc.2",
     "@antora/site-generator": "3.2.0-rc.2",
-    "@antora/atlas-extension": "1.0.0-alpha.5",
+    "@antora/atlas-extension": "1.0.0-alpha.6",
     "@springio/antora-extensions": "1.14.12",
     "@springio/antora-xref-extension": "1.0.0-alpha.5",
     "@springio/antora-zip-contents-collector-extension": "1.0.0-alpha.10",
